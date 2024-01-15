@@ -1,0 +1,225 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    color: #222222;
+    background: #DCD9D2;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    overflow-x: hidden;
+    line-height: 1.4;
+    position:relative
+}
+
+img {
+    max-width: 100%;
+}
+
+.container{
+    @apply max-w-[140rem] mx-auto p-[1.5rem]
+}
+.header{
+    @apply bg-[#f5f5f5] relative w-[100%] shadow-lg
+}
+.branding{
+    @apply flex justify-between items-center
+}
+.branding__image{
+    @apply max-w-[15rem]
+}
+.branding__options{
+    @apply flex items-center justify-center
+}
+.branding__options ul{
+    @apply flex items-center gap-[2rem]
+}
+.branding__options ul li img{
+    @apply max-w-[7rem]
+}
+.branding__options ul li p{
+    @apply font-bold
+}
+.branding__options ul li i{
+    @apply text-grey
+}
+.branding__options ul li:first-child i{
+    @apply text-[#309340]
+}
+.navbar{
+    @apply max-w-[20rem] h-[150vh] bg-[#f5f5f5] absolute top-[10rem] z-10
+}
+.navbar__wrapper{
+    @apply block px-[2rem]
+}
+.user__details{
+    @apply mt-[2rem] flex gap-[2rem] items-center
+}
+.user__image img{
+    @apply w-[6rem]
+}
+.user__name h3{
+    @apply font-bold text-dark text-[26px]
+}
+.navbar__menu{
+    @apply flex mt-[3rem] justify-between items-center
+}
+.navbar__menu ul li{
+    @apply flex gap-[2rem] items-center mt-[2rem] mb-[1rem] text-[#909B92]
+}
+.navbar__menu ul li i{
+    @apply text-[2rem]
+}
+.navbar__menu ul li:hover{
+    @apply text-primary
+}
+.navbar__menu ul li:first-child{
+    @apply text-primary
+}
+.navbar__menu ul li:first-child:hover{
+    @apply text-[#909B92]
+}
+.navbar__menu ul li span{
+    @apply bg-grey w-[14rem] h-[1px]
+}
+.dashboard{
+    @apply pt-[2rem] relative ml-[22rem]
+}
+.dashboard__top__section{
+    @apply flex items-start justify-between
+}
+.top__products{
+    @apply max-w-[65rem] bg-light rounded-lg border-grey border-[1px] shadow-md p-[2rem]
+}
+.top__section{
+    @apply flex items-center justify-between my-[2rem] mx-auto
+}
+.top__section h2{
+    @apply font-bold
+}
+.top__section__buttons ul{
+    @apply flex items-center gap-[1rem]
+}
+.top__section__buttons ul li a{
+    @apply mx-auto text-center font-bold p-[1rem] bg-light text-[#909B92] border-[1px] border-[#909B92] rounded-lg text-[10px]
+}
+.top__section__buttons ul li a:hover{
+    @apply text-light border-primary bg-primary
+}
+/* .top__section__buttons ul li a:last-child{
+    @apply bg-primary text-light border-primary border-[1px]
+} */
+.bottom__headers{
+    @apply flex items-center pt-[1rem] px-[2rem]
+}
+.bottom__headers ul{
+    @apply flex items-center gap-[1rem]
+}
+.bottom__headers ul li{
+    @apply flex items-center w-[10rem] text-[1.4rem] text-left
+} 
+.bottom__headers ul li:first-child{
+    @apply w-[5rem] text-center
+}
+.bottom__headers ul li:last-child{
+    @apply text-right ml-[3rem]
+}
+.bottom__headers ul li h4 span{
+    @apply ml-[1rem] rounded-full border-[1px] border-grey px-[.3rem] hover:bg-grey
+}
+.bottom__headers ul li h4{
+    @apply text-dark font-bold
+}
+.line__divider span{
+    @apply w-[61rem] flex justify-center h-[1px] bg-grey my-[1rem]
+}
+.bottom__content{
+    @apply my-[.5rem]
+}
+.bottom__content ul{
+    @apply flex items-center gap-[1rem]
+}
+.bottom__content ul li{
+    @apply w-[10rem] text-[1.2rem] text-dark text-left
+}
+.bottom__content ul li:first-child{
+    @apply text-center w-[5rem] mr-[2rem]
+}
+.bottom__content ul li:nth-child(5){
+    @apply text-center
+}
+.bottom__content ul li:last-child{
+    @apply text-right
+}
+.inventory__status{
+    @apply p-[1.5rem] rounded-lg bg-light w-[40rem] shadow-lg
+}
+.inventory__status h2{
+    @apply font-bold
+}
+.quick__fact__grid{
+    @apply grid grid-cols-2 mx-auto ml-[1rem]
+}
+.quick__fact__card{
+    @apply flex-col items-center justify-center rounded-md border-[1px] border-dark p-[.5rem] max-w-[17rem] mt-[2rem] h-[10rem]
+}
+.quick__fact__card:first-child{
+    @apply bg-secondary border-secondary
+}
+.quick__fact__card:nth-child(2){
+    @apply bg-primary border-primary
+}
+.quick__fact__card:nth-child(3){
+    @apply bg-[#E19808] border-[#E19808]
+}
+.quick__fact__card:last-child{
+    @apply bg-[#2A56AC] border-[#2A56AC]
+}
+.quick__fact__card h4{
+    @apply text-center font-bold mt-[2rem] mb-[1rem] text-light text-[2rem]
+}
+.quick__fact__card p{
+    @apply text-center text-[10px] text-light
+}
+.dashboard__sales{
+    @apply bg-light rounded-lg border-[1px] border-grey shadow-lg max-w-[65rem] p-[2rem] mt-[-3rem]
+}
+.sales__top__section{
+    @apply flex items-center justify-between my-[2rem] mx-auto
+}
+.sales__top__section h2{
+    @apply font-bold
+}
+.sales__top__section__buttons ul{
+    @apply flex items-center gap-[1rem]
+}
+.sales__top__section__buttons ul li a{
+    @apply mx-auto text-center font-bold p-[1rem] bg-light text-[#909B92] border-[1px] border-[#909B92] rounded-lg text-[10px]
+}
+.sales__top__section__buttons ul li a:hover{
+    @apply text-light border-primary bg-primary
+}
+.dashboard__users{
+    @apply bg-light rounded-lg border-[1px] border-grey shadow-lg max-w-[65rem] p-[2rem] mt-[3rem]
+}
+.users__top__section{
+    @apply flex items-center justify-between my-[2rem] mx-auto
+}
+.users__top__section h2{
+    @apply font-bold
+}
+.users__top__section__buttons ul{
+    @apply flex items-center gap-[1rem]
+}
+.users__top__section__buttons ul li a{
+    @apply mx-auto text-center font-bold p-[1rem] bg-light text-[#909B92] border-[1px] border-[#909B92] rounded-lg text-[10px]
+}
+.users__top__section__buttons ul li a:hover{
+    @apply text-light border-primary bg-primary
+}
+
