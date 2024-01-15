@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kadiwa Admin System</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <script src="https://kit.fontawesome.com/84f56e6e16.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="branding">
+                    <div class="branding__image">
+                        <img src="./dist/img/download (3).png" alt="">
+                    </div>
+                    <div class="branding__options">
+                        <ul>
+                            <li><i class="fa-solid fa-bell"></i></li>
+                            <li><img src="./dist/img/download (5).png" alt=""></li>
+                            <li>
+                                <p>User</p>
+                            </li>
+                            <li><i class="fa-solid fa-chevron-down"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="navbar">
+        <div class="container">
+            <div class="navbar__wrapper">
+                <div class="user__details">
+                    <div class="user__image">
+                        <img src="./dist/img/download (5).png" alt="">
+                    </div>
+                    <div class="user__name">
+                        <h3>User</h3>
+                        <p>Admin</p>
+                    </div>
+                </div>
+                <div class="navbar__menu">
+                    <ul>
+                        <li><i class="fa-solid fa-house-chimney"></i>
+                            <p>Dashboard</p>
+                        </li>
+                        <li><i class="fa-solid fa-chart-column"></i>
+                            <p>Demographics</p>
+                        </li>
+                        <li><i class="fa-solid fa-clipboard-list"></i>
+                            <p>Reports</p>
+                        </li>
+                        <li><i class="fa-solid fa-box"></i>
+                            <p>Inventory Status</p>
+                        </li>
+                        <li><i class="fa-solid fa-chart-pie"></i>
+                            <p>Statistics</p>
+                        </li>
+                        <li><i class="fa-solid fa-money-check-dollar"></i>
+                            <p>Price Monitoring</p>
+                        </li>
+                        <li><span></span></li>
+                        <li><i class="fa-solid fa-gear"></i>
+                            <p>Settings</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="store">
+        <div class="container">
+            <div class="store__wrapper">
+                <div class="store__list">
+                    <div class="store__top__section">
+                        <h2>Store List</h2>
+                        <div class="dropdown__button">
+                            <p>Sort by:</p>
+                            <span>
+                                <select name="period" id="period">
+                                    <option value="daily">Daily</option>
+                                    <option value="weekly">Weekly</option>
+                                    <option value="monthly">Monthly</option>
+                                    <option value="annually">Annually</option>
+                                </select>
+                            </span>
+                        </div>
+                        <div class="add__store__button">
+                            <a href=""><i class="fa-solid fa-plus"></i>Add Store</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -24,6 +24,8 @@ img {
 .container{
     @apply max-w-[140rem] mx-auto p-[1.5rem]
 }
+
+/* DASHBOARD */
 .header{
     @apply bg-[#f5f5f5] relative w-[100%] shadow-lg
 }
@@ -222,4 +224,57 @@ img {
 .users__top__section__buttons ul li a:hover{
     @apply text-light border-primary bg-primary
 }
+.price__monitoring{
+    @apply p-[1.5rem] rounded-lg bg-light w-[40rem] shadow-lg mt-[5rem] relative
+}
+.price__monitoring h2{
+    @apply font-bold text-dark mb-[2rem]
+}
+.dashboard__bottom__section{
+    @apply grid grid-cols-[2fr,1fr]
+}
+.dashboard__right{
+    @apply absolute right-[1.5rem]
+}
+.price__header ul{
+    @apply flex justify-between my-[1rem] font-bold text-dark
+}
+.price__holder{
+    @apply px-[2rem]
+}
+.product__price ul{
+    @apply flex justify-between text-dark
+}
+.product__price ul li{
+    @apply my-[.9rem]
+}
 
+
+/* DEMOGRAPHICS */
+.navbar__menu ul li{
+    @apply flex gap-[2rem] items-center mt-[2rem] mb-[1rem] text-[#909B92]
+}
+.navbar__menu ul li i{
+    @apply text-[2rem]
+}
+.navbar__menu ul li:hover{
+    @apply text-primary
+}
+.navbar__menu ul li:first-child{
+    @apply text-[#909B92]
+}
+.navbar__menu ul li:first-child:hover{
+    @apply text-primary
+}
+.navbar__menu ul li:nth-child(2){
+    @apply text-primary
+}
+.navbar__menu ul li:nth-child(2):hover{
+    @apply text-[#909B92]
+}
+.navbar__menu ul li span{
+    @apply bg-grey w-[14rem] h-[1px]
+}
+.store{
+    @apply ml-[22rem]
+}
