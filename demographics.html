@@ -46,59 +46,338 @@
                 </div>
                 <div class="navbar__menu">
                     <ul>
-                        <li><i class="fa-solid fa-house-chimney"></i>
-                            <p>Dashboard</p>
+                        <li><a href="./index.html"><i class="fa-solid fa-house-chimney"></i><p>Dashboard</p></a>
                         </li>
-                        <li><i class="fa-solid fa-chart-column"></i>
-                            <p>Demographics</p>
+                        <li><a href="./demographics.html"><i class="fa-solid fa-chart-column"></i><p>Demographics</p></a>
                         </li>
-                        <li><i class="fa-solid fa-clipboard-list"></i>
-                            <p>Reports</p>
+                        <li><a href=""><i class="fa-solid fa-clipboard-list"></i><p>Reports</p></a>
                         </li>
-                        <li><i class="fa-solid fa-box"></i>
-                            <p>Inventory Status</p>
+                        <li><a href=""><i class="fa-solid fa-box"></i><p>Inventory Status</p></a>
                         </li>
-                        <li><i class="fa-solid fa-chart-pie"></i>
-                            <p>Statistics</p>
+                        <li><a href=""><i class="fa-solid fa-chart-pie"></i><p>Statistics</p></a>
                         </li>
-                        <li><i class="fa-solid fa-money-check-dollar"></i>
-                            <p>Price Monitoring</p>
+                        <li><a href=""><i class="fa-solid fa-money-check-dollar"></i><p>Price Monitoring</p></a>
                         </li>
                         <li><span></span></li>
-                        <li><i class="fa-solid fa-gear"></i>
-                            <p>Settings</p>
+                        <li><a href=""><i class="fa-solid fa-gear"></i><p>Settings</p></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
-
-    <div class="store">
-        <div class="container">
-            <div class="store__wrapper">
-                <div class="store__list">
-                    <div class="store__top__section">
-                        <h2>Store List</h2>
-                        <div class="dropdown__button">
-                            <p>Sort by:</p>
-                            <span>
-                                <select name="period" id="period">
-                                    <option value="daily">Daily</option>
-                                    <option value="weekly">Weekly</option>
-                                    <option value="monthly">Monthly</option>
-                                    <option value="annually">Annually</option>
-                                </select>
-                            </span>
+    <div class="demographics__grid">
+        <div class="demographics__left">
+            <section class="store">
+                <div class="container">
+                    <div class="store__wrapper">
+                        <div class="store__top__section">
+                            <h2>Store List</h2>
+                            <div class="right__section">
+                                <div class="dropdown__button">
+                                    <p>Sort by:</p>
+                                    <span>
+                                        <select name="period" id="period">
+                                            <option value="daily">Daily</option>
+                                            <option value="weekly">Weekly</option>
+                                            <option value="monthly">Monthly</option>
+                                            <option value="annually">Annually</option>
+                                        </select>
+                                    </span>
+                                </div>
+                                <div class="add__store__button">
+                                    <a href=""><i class="fa-solid fa-plus"></i>Add Store</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="add__store__button">
-                            <a href=""><i class="fa-solid fa-plus"></i>Add Store</a>
+                        <div class="store__bottom__section">
+                            <div class="store__bottom__headers">
+                                <ul>
+                                    <li><a href="">No</a></li>
+                                    <li><a href="">Store</a></li>
+                                    <li><a href="">Owner</a></li>
+                                    <li><a href="">Location</a></li>
+                                    <li><a href="">Contact No.</a></li>
+                                    <li><a href="">Status</a></li>
+                                    <li><a href="">Action</a></li>
+                                </ul>
+                            </div>
+                            <div class="store__line__divider">
+                                <span></span>
+                            </div>
+                            <div class="store__list">
+                                <div class="store__entries">
+                                    <ul>
+                                        <li>01</li>
+                                        <li>Sample Store</li>
+                                        <li>Juan Dela Cruz</li>
+                                        <li>Sample Address</li>
+                                        <li>+639120442951</li>
+                                        <li><span>Open</span></li>
+                                        <li><div class="action__buttons"></div>
+                                        <ul>
+                                            <li><a href=""><i class="fa-solid fa-pen-to-square"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-trash"></i></a></li>
+                                        </ul></li>
+                                    </ul>   
+                                </div>
+                                <div class="store__entries">
+                                    <ul>
+                                        <li>02</li>
+                                        <li>Sample Store</li>
+                                        <li>Juan Dela Cruz</li>
+                                        <li>Sample Address</li>
+                                        <li>+639120442652</li>
+                                        <li><span>Open</span></li>
+                                        <li><div class="action__buttons"></div>
+                                        <ul>
+                                            <li><a href=""><i class="fa-solid fa-pen-to-square"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-trash"></i></a></li>
+                                        </ul></li>
+                                    </ul>
+                                </div>
+                                <div class="store__entries">
+                                    <ul>
+                                        <li>03</li>
+                                        <li>Sample Store</li>
+                                        <li>Juan Dela Cruz</li>
+                                        <li>Sample Address</li>
+                                        <li>+639620432921</li>
+                                        <li><span>Closed</span></li>
+                                        <li><div class="action__buttons"></div>
+                                        <ul>
+                                            <li><a href=""><i class="fa-solid fa-pen-to-square"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-trash"></i></a></li>
+                                        </ul></li>
+                                    </ul>
+                                </div>
+                                <div class="store__entries">
+                                    <ul>
+                                        <li>04</li>
+                                        <li>Sample Store</li>
+                                        <li>Juan Dela Cruz</li>
+                                        <li>Sample Address</li>
+                                        <li>+639214242951</li>
+                                        <li><span>Open</span></li>
+                                        <li><div class="action__buttons"></div>
+                                        <ul>
+                                            <li><a href=""><i class="fa-solid fa-pen-to-square"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-trash"></i></a></li>
+                                        </ul></li>
+                                    </ul>
+                                </div>
+                                <div class="store__entries">
+                                    <ul>
+                                        <li>05</li>
+                                        <li>Sample Store</li>
+                                        <li>Juan Dela Cruz</li>
+                                        <li>Sample Address</li>
+                                        <li>+639120459578</li>
+                                        <li><span>Open</span></li>
+                                        <li><div class="action__buttons"></div>
+                                        <ul>
+                                            <li><a href=""><i class="fa-solid fa-pen-to-square"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-trash"></i></a></li>
+                                        </ul></li>
+                                    </ul>
+                                </div>
+                                <div class="store__entries">
+                                    <ul>
+                                        <li>06</li>
+                                        <li>Sample Store</li>
+                                        <li>Juan Dela Cruz</li>
+                                        <li>Sample Address</li>
+                                        <li>+639162429512</li>
+                                        <li><span>Open</span></li>
+                                        <li><div class="action__buttons"></div>
+                                        <ul>
+                                            <li><a href=""><i class="fa-solid fa-pen-to-square"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-trash"></i></a></li>
+                                        </ul></li>
+                                    </ul>
+                                </div>
+                                <div class="store__entries">
+                                    <ul>
+                                        <li>07</li>
+                                        <li>Sample Store</li>
+                                        <li>Juan Dela Cruz</li>
+                                        <li>Sample Address</li>
+                                        <li>+639660442903</li>
+                                        <li><span>Closed</span></li>
+                                        <li><div class="action__buttons"></div>
+                                        <ul>
+                                            <li><a href=""><i class="fa-solid fa-pen-to-square"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-trash"></i></a></li>
+                                        </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="store__pages">
+                                <h4>1 to 7 of 500 records</h4>
+                                <div class="store__pages__button">
+                                    <ul>
+                                        <li><a href=""><i class="fa-solid fa-chevron-left"></i></a></li>
+                                        <li><a href="">1</a></li>
+                                        <li><a href="">2</a></li>
+                                        <li><a href="">3</a></li>
+                                        <li><a href="">4</a></li>
+                                        <li><a href="">5</a></li>
+                                        <li><a href=""><i class="fa-solid fa-ellipsis"></i></a></li>
+                                        <li><a href=""><i class="fa-solid fa-chevron-right"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="partners">
+                <div class="container">
+                    <div class="partners__wrapper">
+                        <div class="partners__top__section">
+                            <h2>List of Partners</h2>
+                            <div class="right__section">
+                                <div class="dropdown__button">
+                                    <p>Sort by:</p>
+                                    <span>
+                                        <select name="category" id="category">
+                                            <option value="all">All Categories</option>
+                                            <option value="number">Number</option>
+                                            <option value="gender">Gender</option>
+                                            <option value="location">Location</option>
+                                        </select>
+                                    </span>
+                                </div>
+                                <div class="add__partner__button">
+                                    <a href=""><i class="fa-solid fa-plus"></i>Add Partner</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="partners__bottom__section">
+                            <div class="partners__bottom__headers">
+                                <ul>
+                                    <li><a href="">No.</a></li>
+                                    <li><a href="">Owner</a></li>
+                                    <li><a href="">Gender</a></li>
+                                    <li><a href="">Location</a></li>
+                                    <li><a href="">Contact No.</a></li>
+                                    <li><a href="">Action</a></li>
+                                </ul>
+                            </div>
+                            <div class="partner__line__divider">
+                                <span></span>
+                            </div>
+                            <div class="partner__list">
+                                <div class="partner__entries">
+                                    <ul>
+                                        <li>01</li>
+                                        <li>Juan Dela Cruz</li>
+                                        <li>Male</li>
+                                        <li>Sample Address</li>
+                                        <li>+639120442951</li>
+                                        <li><div class="action__buttons"></div>
+                                        <ul>
+                                            <li><a href=""><i class="fa-solid fa-pen-to-square"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-trash"></i></a></li>
+                                        </ul>
+                                    </li>
+                                    </ul>
+                                </div>
+                                <div class="partner__entries">
+                                    <ul>
+                                        <li>02</li>
+                                        <li>Juan Dela Cruz</li>
+                                        <li>Male</li>
+                                        <li>Sample Address</li>
+                                        <li>+639660412958</li>
+                                        <li><div class="action__buttons"></div>
+                                        <ul>
+                                            <li><a href=""><i class="fa-solid fa-pen-to-square"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-trash"></i></a></li>
+                                        </ul>
+                                    </li>
+                                    </ul>
+                                </div>
+                                <div class="partner__entries">
+                                    <ul>
+                                        <li>03</li>
+                                        <li>Juan Dela Cruz</li>
+                                        <li>Male</li>
+                                        <li>Sample Address</li>
+                                        <li>+639125542957</li>
+                                        <li><div class="action__buttons"></div>
+                                        <ul>
+                                            <li><a href=""><i class="fa-solid fa-pen-to-square"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-trash"></i></a></li>
+                                        </ul>
+                                    </li>
+                                    </ul>
+                                </div>
+                                <div class="partner__entries">
+                                    <ul>
+                                        <li>04</li>
+                                        <li>Juan Dela Cruz</li>
+                                        <li>Male</li>
+                                        <li>Sample Address</li>
+                                        <li>+639120429512</li>
+                                        <li><div class="action__buttons"></div>
+                                        <ul>
+                                            <li><a href=""><i class="fa-solid fa-pen-to-square"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-trash"></i></a></li>
+                                        </ul>
+                                    </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="partner__pages">
+                                <h4>1 to 4 of 308 records</h4>
+                                <div class="partner__pages__button">
+                                    <ul>
+                                        <li><a href=""><i class="fa-solid fa-chevron-left"></i></a></li>
+                                        <li><a href="">1</a></li>
+                                        <li><a href="">2</a></li>
+                                        <li><a href="">3</a></li>
+                                        <li><a href="">4</a></li>
+                                        <li><a href="">5</a></li>
+                                        <li><a href=""><i class="fa-solid fa-ellipsis"></i></a></li>
+                                        <li><a href=""><i class="fa-solid fa-chevron-right"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="demographics__right">
+            <div class="consumer__demographics">
+                <div class="graph__list">
+                    <div class="gender__demographics">
+                        <h2>Gender Demographics</h2>
+                        <div class="gender__chart">
+                            <img src="./dist/img/Gender Demographics.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="consumer__age">
+                    <h2>Consumer Age</h2>
+                    <div class="age__chart">
+                        <img src="./dist/img/Age Bracket.png" alt="">
+                    </div>
+                </div>
+                <div class="location">
+                    <h2>Location</h2>
+                    <h4>Based on number of Consumers</h4>
+                    <div class="location__chart">
+                        <img src="./dist/img/Location.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 
     <script src="./script.js"></script>
 </body>

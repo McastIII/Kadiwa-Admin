@@ -71,19 +71,19 @@ img {
 .navbar__menu{
     @apply flex mt-[3rem] justify-between items-center
 }
-.navbar__menu ul li{
+.navbar__menu ul li a{
     @apply flex gap-[2rem] items-center mt-[2rem] mb-[1rem] text-[#909B92]
 }
-.navbar__menu ul li i{
+.navbar__menu ul li a i{
     @apply text-[2rem]
 }
-.navbar__menu ul li:hover{
+.navbar__menu ul li a:hover{
     @apply text-primary
 }
-.navbar__menu ul li:first-child{
+.navbar__menu ul li a:active{
     @apply text-primary
 }
-.navbar__menu ul li:first-child:hover{
+.navbar__menu ul li a:active:hover{
     @apply text-[#909B92]
 }
 .navbar__menu ul li span{
@@ -113,9 +113,6 @@ img {
 .top__section__buttons ul li a:hover{
     @apply text-light border-primary bg-primary
 }
-/* .top__section__buttons ul li a:last-child{
-    @apply bg-primary text-light border-primary border-[1px]
-} */
 .bottom__headers{
     @apply flex items-center pt-[1rem] px-[2rem]
 }
@@ -275,6 +272,250 @@ img {
 .navbar__menu ul li span{
     @apply bg-grey w-[14rem] h-[1px]
 }
+.demographics__grid{
+    @apply grid grid-cols-[2fr,1fr]
+}
 .store{
-    @apply ml-[22rem]
+    @apply ml-[22rem] mt-[2rem] rounded-lg p-[2rem] shadow-lg bg-light border-[1px] border-grey max-w-[80rem]
+}
+.store__top__section{
+    @apply flex items-center justify-between
+}
+.store__top__section h2{
+    @apply font-bold text-dark
+}
+.right__section{
+    @apply flex items-center gap-[2rem]
+}
+.dropdown__button{
+    @apply flex items-center
+}
+.dropdown__button p{
+    @apply border-[1px] border-grey text-dark
+}
+.dropdown__button select{
+    @apply border-[1px] border-grey py-[.17rem] text-dark
+}
+.add__store__button a{
+    @apply bg-primary rounded-lg p-[.5rem] text-light border-primary border-[1px]
+}
+.add__store__button a i{
+    @apply text-primary bg-light rounded-full px-[1px] mr-[7px]
+}
+.add__store__button a:hover{
+    @apply bg-[#074d05] border-[1px] border-[#074d05]
+}
+.store__bottom__headers{
+    @apply flex items-center mt-[2rem] px-[2rem] 
+}
+.store__bottom__headers ul{
+    @apply flex items-center gap-[1rem]
+}
+.store__bottom__headers ul li{
+    @apply flex items-center w-[10rem] text-[1.4rem] text-left font-bold text-dark
+} 
+.store__bottom__headers ul li:first-child{
+    @apply w-[5rem] text-center
+}
+.store__bottom__headers ul li:last-child{
+    @apply text-right ml-[3rem]
+}
+.store__bottom__headers ul li:nth-child(6){
+    @apply flex justify-center text-center w-[8rem]
+}
+.store__bottom__headers ul li h4 span{
+    @apply ml-[1rem] rounded-full border-[1px] border-grey px-[.3rem] hover:bg-grey
+}
+.store__bottom__headers ul li h4{
+    @apply text-dark font-bold
+}
+.store__line__divider span{
+    @apply w-[76rem] flex justify-center h-[1px] bg-grey my-[1rem]
+}
+.store__entries{
+    @apply my-[1rem]
+}
+.store__entries ul{
+    @apply flex items-center gap-[1rem]
+}
+.store__entries ul li:first-child{
+    @apply w-[5rem] text-center
+}
+.store__entries ul li{
+    @apply text-[1.3rem] text-dark text-left w-[10rem] 
+}
+.store__entries ul li span{
+    @apply bg-primary border-[1px] border-primary text-center py-[.5rem] px-[1rem] rounded-full text-light
+}
+.store__entries ul li:nth-child(6){
+    @apply mx-auto flex justify-center
+}
+.store__entries:nth-child(3) ul li span{
+    @apply bg-[#C50101] border-[#C50101] border-[1px] px-[.5rem]
+}
+.store__entries:last-child ul li span{
+    @apply bg-[#C50101] border-[#C50101] border-[1px] px-[.5rem]
+}
+.store__entries ul li ul li a{
+    @apply bg-[#2A56AC] border-[1px] border-[#2A56AC] rounded-lg p-[5px] text-light
+}
+.store__entries ul li ul li a:hover{
+    @apply bg-[#1C3B78] border-[1px] border-[#1C3B78] rounded-lg p-[5px] text-light
+}
+.store__entries ul li ul li:last-child a{
+    @apply bg-[#C50101] border-[1px] border-[#C50101] rounded-lg p-[5px] text-light
+}
+.store__entries ul li ul li:last-child a:hover{
+    @apply bg-[#A30303] border-[1px] border-[#A30303] rounded-lg p-[5px] text-light
+}
+.store__pages{
+    @apply flex items-center justify-between mt-[2rem]
+}
+.store__pages__button{
+    @apply flex items-center
+}
+.store__pages h4{
+    @apply text-dark text-[1.3rem]
+}
+.store__pages__button ul{
+    @apply flex items-baseline gap-[1.5rem]
+}
+.store__pages__button ul li{
+    @apply border-[1px] border-grey rounded-lg py-[5px] px-[8px]
+}
+.store__pages__button ul li:hover{
+    @apply border-[1px] border-[#909B92] bg-[#909B92] rounded-lg py-[5px] px-[8px]
+}
+.store__pages__button ul li a{
+    @apply text-[1.3rem]
+}
+
+.partners{
+    @apply ml-[22rem] mt-[2rem] rounded-lg p-[2rem] shadow-lg bg-light border-[1px] border-grey max-w-[80rem]
+}
+.partners__top__section{
+    @apply flex items-center justify-between
+}
+.partners__top__section h2{
+    @apply font-bold text-dark
+}
+.right__section{
+    @apply flex items-center gap-[2rem]
+}
+.dropdown__button{
+    @apply flex items-center
+}
+.dropdown__button p{
+    @apply border-[1px] border-grey text-dark
+}
+.dropdown__button select{
+    @apply border-[1px] border-grey py-[.17rem] text-dark
+}
+.add__partner__button a{
+    @apply bg-primary rounded-lg p-[.5rem] text-light border-primary border-[1px] 
+}
+.add__partner__button a i{
+    @apply text-primary bg-light rounded-full px-[1px] mr-[7px]
+}
+.add__partner__button a:hover{
+    @apply bg-[#074d05] border-[1px] border-[#074d05]
+}
+.partners__bottom__headers{
+    @apply flex items-center mt-[2rem] px-[2rem] 
+}
+.partners__bottom__headers ul{
+    @apply flex items-center gap-[1rem]
+}
+.partners__bottom__headers ul li{
+    @apply flex items-center w-[10rem] text-[1.4rem] text-center font-bold text-dark
+} 
+.partners__bottom__headers ul li:first-child{
+    @apply pl-[2rem] text-center
+}
+.partners__bottom__headers ul li:last-child{
+    @apply text-right ml-[3rem]
+}
+.partners__bottom__headers ul li h4 span{
+    @apply ml-[1rem] rounded-full border-[1px] border-grey px-[.3rem] hover:bg-grey
+}
+.partners__bottom__headers ul li h4{
+    @apply text-dark font-bold
+}
+.partner__line__divider span{
+    @apply w-[70rem] flex justify-center h-[1px] bg-grey my-[1rem]
+}
+.partner__entries{
+    @apply my-[1.2rem]
+}
+.partner__entries ul{
+    @apply flex items-center gap-[1rem]
+}
+.partner__entries ul li:first-child{
+    @apply text-center
+}
+.partner__entries ul li{
+    @apply text-[1.3rem] text-dark text-center w-[10rem] 
+}
+.partner__pages{
+    @apply flex items-center justify-between mt-[2rem]
+}
+.partner__pages__button{
+    @apply flex items-center
+}
+.partner__pages h4{
+    @apply text-dark text-[1.3rem]
+}
+.partner__pages__button ul{
+    @apply flex items-baseline gap-[1.5rem]
+}
+.partner__pages__button ul li{
+    @apply border-[1px] border-grey rounded-lg py-[5px] px-[8px]
+}
+.partner__pages__button ul li:hover{
+    @apply border-[1px] border-[#909B92] bg-[#909B92] rounded-lg py-[5px] px-[8px]
+}
+.partner__pages__button ul li a{
+    @apply text-[1.3rem]
+}
+.partner__entries ul li ul li a{
+    @apply bg-[#2A56AC] border-[1px] border-[#2A56AC] rounded-lg p-[5px] text-light
+}
+.partner__entries ul li ul li:last-child a{
+    @apply bg-[#C50101] border-[1px] border-[#C50101] rounded-lg p-[5px] text-light
+}
+.partner__entries ul li ul li a:hover{
+    @apply bg-[#1C3B78] border-[1px] border-[#1C3B78] rounded-lg p-[5px] text-light
+}
+.partner__entries ul li ul li:last-child a:hover{
+    @apply bg-[#A30303] border-[1px] border-[#A30303] rounded-lg p-[5px] text-light
+}
+.partner__entries ul li ul{
+    @apply ml-[3rem]
+}
+.demographics__right{
+    @apply absolute right-[1.5rem] 
+}
+.consumer__demographics{
+    @apply max-w-[30rem] bg-light border-[1px] border-grey shadow-lg mt-[2rem] p-[2rem]
+}
+.gender__demographics h2{
+    @apply font-bold text-center text-dark
+}
+.gender__chart img{
+    @apply my-[4.2rem]
+}
+.consumer__age h2{
+    @apply font-bold text-center text-dark
+}
+.age__chart img{
+    @apply my-[4.2rem]
+}
+.location h2{
+    @apply font-bold text-center text-dark
+}
+.location h4{
+    @apply text-center text-dark text-[1.3rem]
+}
+.location__chart img{
+    @apply my-[5rem]
 }
