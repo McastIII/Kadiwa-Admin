@@ -155,6 +155,8 @@ img {
 .bottom__content ul li:last-child{
     @apply text-right
 }
+
+/* INVENTORY STATUS */
 .inventory__status{
     @apply p-[1.5rem] rounded-lg bg-light w-[40rem] shadow-lg
 }
@@ -185,6 +187,8 @@ img {
 .quick__fact__card p{
     @apply text-center text-[10px] text-light
 }
+
+/* SALES */
 .dashboard__sales{
     @apply bg-light rounded-lg border-[1px] border-grey shadow-lg max-w-[65rem] p-[2rem] mt-[-3rem]
 }
@@ -221,6 +225,8 @@ img {
 .users__top__section__buttons ul li a:hover{
     @apply text-light border-primary bg-primary
 }
+
+/* PRICE MONITORING */
 .price__monitoring{
     @apply p-[1.5rem] rounded-lg bg-light w-[40rem] shadow-lg mt-[5rem] relative
 }
@@ -275,6 +281,8 @@ img {
 .demographics__grid{
     @apply grid grid-cols-[2fr,1fr]
 }
+
+/* STORE */
 .store{
     @apply ml-[22rem] mt-[2rem] rounded-lg p-[2rem] shadow-lg bg-light border-[1px] border-grey max-w-[80rem]
 }
@@ -312,16 +320,10 @@ img {
     @apply flex items-center gap-[1rem]
 }
 .store__bottom__headers ul li{
-    @apply flex items-center w-[10rem] text-[1.4rem] text-left font-bold text-dark
+    @apply flex items-center w-[11rem] text-center text-[1.4rem] font-bold text-dark 
 } 
 .store__bottom__headers ul li:first-child{
     @apply w-[5rem] text-center
-}
-.store__bottom__headers ul li:last-child{
-    @apply text-right ml-[3rem]
-}
-.store__bottom__headers ul li:nth-child(6){
-    @apply flex justify-center text-center w-[8rem]
 }
 .store__bottom__headers ul li h4 span{
     @apply ml-[1rem] rounded-full border-[1px] border-grey px-[.3rem] hover:bg-grey
@@ -336,19 +338,16 @@ img {
     @apply my-[1rem]
 }
 .store__entries ul{
-    @apply flex items-center gap-[1rem]
+    @apply flex items-center gap-[3rem]
 }
 .store__entries ul li:first-child{
     @apply w-[5rem] text-center
 }
 .store__entries ul li{
-    @apply text-[1.3rem] text-dark text-left w-[10rem] 
+    @apply text-[1.3rem] text-dark my-[.5rem]
 }
 .store__entries ul li span{
     @apply bg-primary border-[1px] border-primary text-center py-[.5rem] px-[1rem] rounded-full text-light
-}
-.store__entries ul li:nth-child(6){
-    @apply mx-auto flex justify-center
 }
 .store__entries:nth-child(3) ul li span{
     @apply bg-[#C50101] border-[#C50101] border-[1px] px-[.5rem]
@@ -356,17 +355,11 @@ img {
 .store__entries:last-child ul li span{
     @apply bg-[#C50101] border-[#C50101] border-[1px] px-[.5rem]
 }
-.store__entries ul li ul li a{
-    @apply bg-[#2A56AC] border-[1px] border-[#2A56AC] rounded-lg p-[5px] text-light
+.store__entries ul li a{
+    @apply bg-[#C50101] border-[1px] border-[#C50101] rounded-full p-[5px] text-light
 }
-.store__entries ul li ul li a:hover{
-    @apply bg-[#1C3B78] border-[1px] border-[#1C3B78] rounded-lg p-[5px] text-light
-}
-.store__entries ul li ul li:last-child a{
-    @apply bg-[#C50101] border-[1px] border-[#C50101] rounded-lg p-[5px] text-light
-}
-.store__entries ul li ul li:last-child a:hover{
-    @apply bg-[#A30303] border-[1px] border-[#A30303] rounded-lg p-[5px] text-light
+.store__entries ul li a:hover{
+    @apply bg-[#A30303] border-[1px] border-[#A30303] rounded-full p-[5px] text-light
 }
 .store__pages{
     @apply flex items-center justify-between mt-[2rem]
@@ -390,6 +383,7 @@ img {
     @apply text-[1.3rem]
 }
 
+/* PARTNERS */
 .partners{
     @apply ml-[22rem] mt-[2rem] rounded-lg p-[2rem] shadow-lg bg-light border-[1px] border-grey max-w-[80rem]
 }
@@ -424,16 +418,16 @@ img {
     @apply flex items-center mt-[2rem] px-[2rem] 
 }
 .partners__bottom__headers ul{
-    @apply flex items-center gap-[1rem]
+    @apply flex items-center gap-[2rem]
 }
 .partners__bottom__headers ul li{
-    @apply flex items-center w-[10rem] text-[1.4rem] text-center font-bold text-dark
+    @apply flex items-center mx-auto w-[10rem] text-[1.4rem] text-center font-bold text-dark
 } 
 .partners__bottom__headers ul li:first-child{
     @apply pl-[2rem] text-center
 }
 .partners__bottom__headers ul li:last-child{
-    @apply text-right ml-[3rem]
+    @apply ml-[-1rem]
 }
 .partners__bottom__headers ul li h4 span{
     @apply ml-[1rem] rounded-full border-[1px] border-grey px-[.3rem] hover:bg-grey
@@ -448,13 +442,19 @@ img {
     @apply my-[1.2rem]
 }
 .partner__entries ul{
-    @apply flex items-center gap-[1rem]
+    @apply flex items-center gap-[2rem]
 }
 .partner__entries ul li:first-child{
     @apply text-center
 }
 .partner__entries ul li{
     @apply text-[1.3rem] text-dark text-center w-[10rem] 
+}
+.partner__entries ul li a{
+    @apply bg-[#C50101] border-[1px] border-[#C50101] rounded-full p-[5px] text-light
+}
+.partner__entries ul li a:hover{
+    @apply bg-[#A30303] border-[1px] border-[#A30303] rounded-full p-[5px] text-light
 }
 .partner__pages{
     @apply flex items-center justify-between mt-[2rem]
@@ -477,21 +477,9 @@ img {
 .partner__pages__button ul li a{
     @apply text-[1.3rem]
 }
-.partner__entries ul li ul li a{
-    @apply bg-[#2A56AC] border-[1px] border-[#2A56AC] rounded-lg p-[5px] text-light
-}
-.partner__entries ul li ul li:last-child a{
-    @apply bg-[#C50101] border-[1px] border-[#C50101] rounded-lg p-[5px] text-light
-}
-.partner__entries ul li ul li a:hover{
-    @apply bg-[#1C3B78] border-[1px] border-[#1C3B78] rounded-lg p-[5px] text-light
-}
-.partner__entries ul li ul li:last-child a:hover{
-    @apply bg-[#A30303] border-[1px] border-[#A30303] rounded-lg p-[5px] text-light
-}
-.partner__entries ul li ul{
-    @apply ml-[3rem]
-}
+
+
+/* CONSUMER GRAPHS */
 .demographics__right{
     @apply absolute right-[1.5rem] 
 }

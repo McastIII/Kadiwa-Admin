@@ -2679,6 +2679,8 @@ img {
   text-align: right;
 }
 
+/* INVENTORY STATUS */
+
 .inventory__status {
   width: 40rem;
   border-radius: 0.5rem;
@@ -2760,6 +2762,8 @@ img {
   --tw-text-opacity: 1;
   color: rgb(241 240 238 / var(--tw-text-opacity));
 }
+
+/* SALES */
 
 .dashboard__sales {
   margin-top: -3rem;
@@ -2883,6 +2887,8 @@ img {
   color: rgb(241 240 238 / var(--tw-text-opacity));
 }
 
+/* PRICE MONITORING */
+
 .price__monitoring {
   position: relative;
   margin-top: 5rem;
@@ -2993,6 +2999,8 @@ img {
   grid-template-columns: 2fr 1fr;
 }
 
+/* STORE */
+
 .store {
   margin-left: 22rem;
   margin-top: 2rem;
@@ -3097,9 +3105,9 @@ img {
 
 .store__bottom__headers ul li {
   display: flex;
-  width: 10rem;
+  width: 11rem;
   align-items: center;
-  text-align: left;
+  text-align: center;
   font-size: 1.4rem;
   font-weight: 700;
   --tw-text-opacity: 1;
@@ -3108,18 +3116,6 @@ img {
 
 .store__bottom__headers ul li:first-child {
   width: 5rem;
-  text-align: center;
-}
-
-.store__bottom__headers ul li:last-child {
-  margin-left: 3rem;
-  text-align: right;
-}
-
-.store__bottom__headers ul li:nth-child(6) {
-  display: flex;
-  width: 8rem;
-  justify-content: center;
   text-align: center;
 }
 
@@ -3163,7 +3159,7 @@ img {
 .store__entries ul {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 3rem;
 }
 
 .store__entries ul li:first-child {
@@ -3172,8 +3168,8 @@ img {
 }
 
 .store__entries ul li {
-  width: 10rem;
-  text-align: left;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
   font-size: 1.3rem;
   --tw-text-opacity: 1;
   color: rgb(50 50 50 / var(--tw-text-opacity));
@@ -3193,13 +3189,6 @@ img {
   text-align: center;
   --tw-text-opacity: 1;
   color: rgb(241 240 238 / var(--tw-text-opacity));
-}
-
-.store__entries ul li:nth-child(6) {
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: center;
 }
 
 .store__entries:nth-child(3) ul li span {
@@ -3222,32 +3211,8 @@ img {
   padding-right: .5rem;
 }
 
-.store__entries ul li ul li a {
-  border-radius: 0.5rem;
-  border-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(42 86 172 / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(42 86 172 / var(--tw-bg-opacity));
-  padding: 5px;
-  --tw-text-opacity: 1;
-  color: rgb(241 240 238 / var(--tw-text-opacity));
-}
-
-.store__entries ul li ul li a:hover {
-  border-radius: 0.5rem;
-  border-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(28 59 120 / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(28 59 120 / var(--tw-bg-opacity));
-  padding: 5px;
-  --tw-text-opacity: 1;
-  color: rgb(241 240 238 / var(--tw-text-opacity));
-}
-
-.store__entries ul li ul li:last-child a {
-  border-radius: 0.5rem;
+.store__entries ul li a {
+  border-radius: 9999px;
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(197 1 1 / var(--tw-border-opacity));
@@ -3258,8 +3223,8 @@ img {
   color: rgb(241 240 238 / var(--tw-text-opacity));
 }
 
-.store__entries ul li ul li:last-child a:hover {
-  border-radius: 0.5rem;
+.store__entries ul li a:hover {
+  border-radius: 9999px;
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(163 3 3 / var(--tw-border-opacity));
@@ -3321,6 +3286,8 @@ img {
 .store__pages__button ul li a {
   font-size: 1.3rem;
 }
+
+/* PARTNERS */
 
 .partners {
   margin-left: 22rem;
@@ -3421,10 +3388,12 @@ img {
 .partners__bottom__headers ul {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .partners__bottom__headers ul li {
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   width: 10rem;
   align-items: center;
@@ -3441,8 +3410,7 @@ img {
 }
 
 .partners__bottom__headers ul li:last-child {
-  margin-left: 3rem;
-  text-align: right;
+  margin-left: -1rem;
 }
 
 .partners__bottom__headers ul li h4 span {
@@ -3485,7 +3453,7 @@ img {
 .partner__entries ul {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .partner__entries ul li:first-child {
@@ -3498,6 +3466,30 @@ img {
   font-size: 1.3rem;
   --tw-text-opacity: 1;
   color: rgb(50 50 50 / var(--tw-text-opacity));
+}
+
+.partner__entries ul li a {
+  border-radius: 9999px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(197 1 1 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(197 1 1 / var(--tw-bg-opacity));
+  padding: 5px;
+  --tw-text-opacity: 1;
+  color: rgb(241 240 238 / var(--tw-text-opacity));
+}
+
+.partner__entries ul li a:hover {
+  border-radius: 9999px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(163 3 3 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(163 3 3 / var(--tw-bg-opacity));
+  padding: 5px;
+  --tw-text-opacity: 1;
+  color: rgb(241 240 238 / var(--tw-text-opacity));
 }
 
 .partner__pages {
@@ -3552,57 +3544,7 @@ img {
   font-size: 1.3rem;
 }
 
-.partner__entries ul li ul li a {
-  border-radius: 0.5rem;
-  border-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(42 86 172 / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(42 86 172 / var(--tw-bg-opacity));
-  padding: 5px;
-  --tw-text-opacity: 1;
-  color: rgb(241 240 238 / var(--tw-text-opacity));
-}
-
-.partner__entries ul li ul li:last-child a {
-  border-radius: 0.5rem;
-  border-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(197 1 1 / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(197 1 1 / var(--tw-bg-opacity));
-  padding: 5px;
-  --tw-text-opacity: 1;
-  color: rgb(241 240 238 / var(--tw-text-opacity));
-}
-
-.partner__entries ul li ul li a:hover {
-  border-radius: 0.5rem;
-  border-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(28 59 120 / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(28 59 120 / var(--tw-bg-opacity));
-  padding: 5px;
-  --tw-text-opacity: 1;
-  color: rgb(241 240 238 / var(--tw-text-opacity));
-}
-
-.partner__entries ul li ul li:last-child a:hover {
-  border-radius: 0.5rem;
-  border-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(163 3 3 / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(163 3 3 / var(--tw-bg-opacity));
-  padding: 5px;
-  --tw-text-opacity: 1;
-  color: rgb(241 240 238 / var(--tw-text-opacity));
-}
-
-.partner__entries ul li ul {
-  margin-left: 3rem;
-}
+/* CONSUMER GRAPHS */
 
 .demographics__right {
   position: absolute;
